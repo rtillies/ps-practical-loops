@@ -5,7 +5,12 @@
  ***************************/
 
 function nextPrime(number) {
-
+  let nextFound = false
+  while (!nextFound) {
+    number++
+    if (isPrime(number))
+      return number
+  }
 }
 
 function isPrime(number) {
@@ -29,3 +34,6 @@ function isPrime(number) {
 
 console.log(isPrime(45));
 console.log(isPrime(47));
+
+console.log(nextPrime(10));
+console.log(nextPrime(11));
