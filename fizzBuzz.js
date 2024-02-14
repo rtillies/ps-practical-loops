@@ -1,5 +1,5 @@
 /***************************
- * PART 1: Fizz Buzz       * 
+ * PART 1: Fizz Buzz       *
  * Name: Richard Tillies   *
  * Date: February 15, 2024 *
  ***************************/

@@ -1,5 +1,5 @@
 /***************************
- * PART 2: Prime Time       * 
+ * PART 2: Prime Time      *
  * Name: Richard Tillies   *
  * Date: February 15, 2024 *
  ***************************/
