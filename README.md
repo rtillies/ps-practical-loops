@@ -5,6 +5,6 @@
 
 ## Exercises
 
-1. Fizz Buzz
-1. Prime Time
-1. Feeling Loopy
+1. [Fizz Buzz](fizzBuzz.js)
+1. [Prime Time](primeTime.js)
+1. [Feeling Loopy](feelingLoopy.js)
