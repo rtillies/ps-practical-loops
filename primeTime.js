@@ -19,7 +19,7 @@ const nextPrime = number => {
 }
 
 // returns if the given number is a prime number
-function isPrime(number) {
+const isPrime = number => {
   let prime = true;
 
   if (number == 1) {
@@ -28,10 +28,7 @@ function isPrime(number) {
     for (let i = 2; i <= number / 2; i++) {
       if (number % i == 0) {
         prime = false;
-        // console.log(`${number} is divisible by ${i}`);
         break;
-      } else {
-        // console.log(`${number} is NOT divisible by ${i}`);
       }
     }
   }
