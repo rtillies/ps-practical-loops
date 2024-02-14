@@ -4,8 +4,10 @@
  * Date: February 15, 2024 *
  ***************************/
 
+const MAX_NUMBER = 10000
+
 // returns random positive number
-const newRandom = (number = 10000) => 
+const newRandom = (number = MAX_NUMBER) => 
   Math.floor(Math.random() * number) + 1
 
 // returns next prime number greater than given number
@@ -33,15 +35,18 @@ const isPrime = number => {
   return prime;
 }
 
-// create "small" random number and return next prime number
-let x, y
-x = newRandom(100)
-console.log(`Number: ${x}`);
-y = nextPrime(x)
-console.log(`Next Prime: ${y}`);
+function runProgram(number) {
+  if (!number) number = MAX_NUMBER
 
-// create another random number and return next prime number
-x = newRandom()
-console.log(`Number: ${x}`);
-y = nextPrime(x)
-console.log(`Next Prime: ${y}`);
+  let x, y
+  x = newRandom(number)
+  console.log(`Number: ${x}`);
+  y = nextPrime(x)
+  console.log(`Next Prime: ${y}`);
+}
+
+// create "small" random number and return next prime number
+runProgram(100)
+
+// create (potentially) larger random number and return next prime number
+runProgram()
