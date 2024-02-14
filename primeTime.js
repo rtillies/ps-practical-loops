@@ -10,11 +10,9 @@ const newRandom = (number = 10000) =>
 
 // returns next prime number greater than given number
 const nextPrime = number => {
-  let nextFound = false
-  while (!nextFound) {
-    number++
-    if (isPrime(number))
-    return number
+  while (true) {
+    if (isPrime(++number))
+      return number
   }
 }
 
