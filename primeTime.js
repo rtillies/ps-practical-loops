@@ -4,20 +4,22 @@
  * Date: February 15, 2024 *
  ***************************/
 
-// returns random number between 2 and 10000
-function newRandom() {
-  return Math.floor(Math.random() * 10000) + 2
+// returns random positive number
+function newRandom(number = 10000) {
+  return Math.floor(Math.random() * number) + 1
 }
 
+// returns next prime number greater than given number
 function nextPrime(number) {
   let nextFound = false
   while (!nextFound) {
     number++
     if (isPrime(number))
-      return number
+    return number
   }
 }
 
+// returns if the given number is a prime number
 function isPrime(number) {
   let prime = true;
 
@@ -37,11 +39,15 @@ function isPrime(number) {
   return prime;
 }
 
-console.log(isPrime(45));
-console.log(isPrime(47));
+// create "small" random number and return next prime number
+let x, y
+x = newRandom(100)
+console.log(`Number: ${x}`);
+y = nextPrime(x)
+console.log(`Next Prime: ${y}`);
 
-console.log(nextPrime(10));
-console.log(nextPrime(11));
-
-console.log(newRandom());
-console.log(newRandom());
+// create another random number and return next prime number
+x = newRandom()
+console.log(`Number: ${x}`);
+y = nextPrime(x)
+console.log(`Next Prime: ${y}`);
