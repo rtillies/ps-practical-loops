@@ -35,14 +35,12 @@ const isPrime = number => {
   return prime;
 }
 
-function runProgram(number) {
+const runProgram = number => {
   if (!number) number = MAX_NUMBER
 
-  let x, y
-  x = newRandom(number)
-  console.log(`Number: ${x}`);
-  y = nextPrime(x)
-  console.log(`Next Prime: ${y}`);
+  let x = newRandom(number)
+  let y = nextPrime(x)
+  console.log(` ${x} | Next Prime: ${y}`);
 }
 
 // create "small" random number and return next prime number
