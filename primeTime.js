@@ -4,6 +4,11 @@
  * Date: February 15, 2024 *
  ***************************/
 
+// returns random number between 2 and 10000
+function newRandom() {
+  return Math.floor(Math.random() * 10000) + 2
+}
+
 function nextPrime(number) {
   let nextFound = false
   while (!nextFound) {
@@ -37,3 +42,6 @@ console.log(isPrime(47));
 
 console.log(nextPrime(10));
 console.log(nextPrime(11));
+
+console.log(newRandom());
+console.log(newRandom());
